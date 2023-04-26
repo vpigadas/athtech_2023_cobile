@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.athtech.android.network.NetworkActivity;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("App", "The button clicked!!!");
                 Snackbar.make(v, "The button clicked!!!", Snackbar.LENGTH_LONG).show();
 
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                Intent intent = new Intent(MainActivity.this,  NetworkActivity.class);
                 intent.putExtra("name", "Vassili");
                 intent.putExtra("age", 100);
                 startActivityForResult(intent,5000);
